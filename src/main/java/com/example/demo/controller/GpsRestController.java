@@ -45,6 +45,6 @@ public interface GpsRestController {
 	public ResponseEntity<Map<String, List<LatestListResponse>>> getLatestTracks(@Valid @ModelAttribute LatestListRequest latestListRequest);
 
 	@GetMapping(value = "/track", produces = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<Map<String, TrackDetailResponse>> get(@Valid TrackDetailRequest trackDetailRequest);	
+	public ResponseEntity<Map<String, TrackDetailResponse>> getTrackDetail(@Valid TrackDetailRequest trackDetailRequest);	
 
 }

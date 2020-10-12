@@ -2,6 +2,7 @@
 Guide to run:
 -------------------------------------------------------------
 - Read file \document\Manual Unit test.xlsx to view manual test and guides to run Restful API
+- Check on \document folder to view My Workflow Diagram.
 - This project support run on Docker with Dockerfile
 - Project have 3 APIs:
 	+ Upload GPS file : http://localhost/gps/upload
@@ -12,7 +13,7 @@ Guide to run:
 My TODO list:
 ----------------------------------------------------------------------
 - Implement how to draw maps with GPS data and export base64 format for Latest Tracks API. 
-- Improve GSP file parse, caching with list favorite GPS.
+- Improve GSP file parse, smart caching with list favorite GPS.
 - Authentication and authorization with Spring security
 - Why we don't use Time Series DB as InfluxDB for GPS data.
 With real-time or near real-time we can store as regular time series.

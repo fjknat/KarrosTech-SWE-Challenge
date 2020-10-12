@@ -126,7 +126,7 @@ public class GpsRestControllerImpl implements GpsRestController {
 
 	@Override
 	@ExecutionTimeLogging
-	public ResponseEntity<Map<String, TrackDetailResponse>> get(TrackDetailRequest trackDetailRequest) {
+	public ResponseEntity<Map<String, TrackDetailResponse>> getTrackDetail(TrackDetailRequest trackDetailRequest) {
 		TrackDetailResponse trackDetailResponse = trackInfoService.getTrackDetail(trackDetailRequest);
 		if (trackDetailResponse == null ) {
 			return new ResponseEntity<>(HttpStatus.NO_CONTENT);

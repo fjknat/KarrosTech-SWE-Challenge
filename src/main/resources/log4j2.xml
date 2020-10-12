@@ -35,12 +35,13 @@
 		  <AppenderRef ref="Console" />
 		  <AppenderRef ref="File" />
 		</Logger>
+		<Logger name="org.hibernate" level="info" />
 		<!-- <logger name="org.springframework.boot.actuate.endpoint.jmx" level="warn"/>
 		<Logger name="org.springframework.web.filter.CommonsRequestLoggingFilter" level="warn" />		
 		<Logger name="org.springframework.web" level="warn" />
 		<Logger name="org.springframework.security" level="warn" /> -->
 		<!-- <Logger name="org.springframework.http" level="warn" /> -->
-		<Root level="warn">
+		<Root level="error">
 			<AppenderRef ref="Console" />
 			<AppenderRef ref="File" />
 		</Root>
